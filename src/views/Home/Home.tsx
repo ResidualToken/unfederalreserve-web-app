@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/chef.png'
+import chef from '../../assets/img/Original.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <Page>
       <PageHeader
         icon={<img src={chef} height={120} />}
-        title="MasterChef is Ready"
-        subtitle="Stake Uniswap LP tokens to claim your very own yummy SUSHI!"
+        title="Be the Next unFederalServe"
+        subtitle="Stake Uniswap LP tokens or SushiSwap LP tokens to request your unFederalReserve membership!"
       />
 
       <Container>
