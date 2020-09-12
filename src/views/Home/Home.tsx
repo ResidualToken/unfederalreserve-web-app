@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={120} />}
+        icon={<img src={chef} height={0} width={0}/>}
         title="Be the Next unFederalServe"
         subtitle="Stake Uniswap LP tokens or SushiSwap LP tokens to request your unFederalReserve membership!"
       />
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: SUSHI-ETH UNI-V2 LP token pool yields TWICE more token
+        🏆<b>Pro Tip</b>: eRSDL-ETH UNI-V2 LP token pool yields TWICE more token
         rewards per block.
       </StyledInfo>
       <Spacer size="lg" />
