@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/Original.png'
+import chef from '../../assets/img/redlogo.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={0} width={0}/>}
+        icon={<img src={chef} height={120} width={120}/>}
         title="Be the Next unFederalServe"
         subtitle="Stake Uniswap LP tokens or SushiSwap LP tokens to request your unFederalReserve membership!"
       />
