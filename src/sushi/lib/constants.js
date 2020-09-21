@@ -17,7 +17,7 @@ export const INTEGERS = {
   ONES_31: new BigNumber('4294967295'), // 2**32-1
   ONES_127: new BigNumber('340282366920938463463374607431768211455'), // 2**128-1
   ONES_255: new BigNumber(
-    '115792089237316195423570985008687907853269984665640564039457584007913129639935',
+      '115792089237316195423570985008687907853269984665640564039457584007913129639935',
   ), // 2**256-1
   INTEREST_RATE_BASE: new BigNumber('1e18'),
 }
@@ -35,15 +35,15 @@ export const addressMap = {
   SNX: '0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F',
   COMP: '0xc00e94Cb662C3520282E6f5717214004A7f26888',
   LEND: '0x80fB784B7eD66730e8b1DBd9820aFD29931aab03',
-  eRSDLYCRV: '0x2C7a51A357d5739C5C74Bf3C96816849d2c9F726',
+  SUSHIYCRV: '0x2C7a51A357d5739C5C74Bf3C96816849d2c9F726',
 }
 
 export const contractAddresses = {
   sushi: {
-    1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+    1: '0x01Ce398A2A59d164f366762EE70c596de06E9482',
   },
   masterChef: {
-    1: '0xc2edad668740f1aa35e4d8f227fb8e17dca888cd',
+    1: '0xae6e57597AA5C576269EF40F5058f04A24fe8De7',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -65,22 +65,23 @@ UNI-V2 LP Address on mainnet for reference
 9  BAND 0xf421c3f2e695c2d4c0765379ccace8ade4a480d9
 10 AMPL 0xc5be99a02c6857f9eac67bbce58df5572498f40c
 11 YFI  0x2fdbadf3c4d5a8666bc06645b8358ab803996e28
-12 eRSDL 0xce84867c3c02b05dc570d0135103d3fb9cc19433
+12 eRSDL 0x48067fea2453f6e79fe585b7a0200ae97ad5d10a
+
 */
 
 export const supportedPools = [
   {
     pid: 12,
     lpAddresses: {
-      1: '0xce84867c3c02b05dc570d0135103d3fb9cc19433',
+      1: '0x48067fea2453f6e79fe585b7a0200ae97ad5d10a',
     },
     tokenAddresses: {
-      1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+      1: '0x01Ce398A2A59d164f366762EE70c596de06E9482',
     },
-    name: 'Sushi Party!',
+    name: 'UnFederalReserve eRSDL!',
     symbol: 'eRSDL-ETH UNI-V2 LP',
     tokenSymbol: 'eRSDL',
-    icon: '🍣',
+    icon: '🐥',
   },
   {
     pid: 0,
@@ -90,7 +91,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xdac17f958d2ee523a2206206994597c13d831ec7',
     },
-    name: 'Tether Turtle',
+    name: 'Tether',
     symbol: 'USDT-ETH UNI-V2 LP',
     tokenSymbol: 'USDT',
     icon: '🐢',
@@ -103,7 +104,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
     },
-    name: 'Circle Snail',
+    name: 'Circle',
     symbol: 'USDC-ETH UNI-V2 LP',
     tokenSymbol: 'USDC',
     icon: '🐌',
@@ -116,7 +117,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x6b175474e89094c44da98b954eedeac495271d0f',
     },
-    name: 'Donald DAI',
+    name: 'DAI',
     symbol: 'DAI-ETH UNI-V2 LP',
     tokenSymbol: 'DAI',
     icon: '🦆',
@@ -129,7 +130,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x57ab1ec28d129707052df4df418d58a2d46d5f51',
     },
-    name: 'Spartan Dollar',
+    name: 'Dollar',
     symbol: 'SUSD-ETH UNI-V2 LP',
     tokenSymbol: 'SUSD',
     icon: '🦍',
@@ -142,7 +143,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x04fa0d235c4abf4bcf4787af4cf447de572ef828',
     },
-    name: 'Umami Squid',
+    name: 'Umami',
     symbol: 'UMA-ETH UNI-V2 LP',
     tokenSymbol: 'UMA',
     icon: '🦑',
@@ -155,7 +156,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xba11d00c5f74255f56a5e366f4f77f5a186d7f55',
     },
-    name: 'Band-osaurus',
+    name: 'BAND',
     symbol: 'BAND-ETH UNI-V2 LP',
     tokenSymbol: 'BAND',
     icon: '🦖',
@@ -168,7 +169,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x514910771af9ca656af840dff83e8264ecf986ca',
     },
-    name: 'Toadie Marine',
+    name: 'LINK',
     symbol: 'LINK-ETH UNI-V2 LP',
     tokenSymbol: 'LINK',
     icon: '🐸',
@@ -181,7 +182,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xd46ba6d942050d489dbd938a2c909a5d5039a161',
     },
-    name: 'Ample Chicks',
+    name: 'Ample',
     symbol: 'AMPL-ETH UNI-V2 LP',
     tokenSymbol: 'AMPL',
     icon: '🐥',
@@ -194,7 +195,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xc00e94cb662c3520282e6f5717214004a7f26888',
     },
-    name: 'Compound Truffle',
+    name: 'Compound',
     symbol: 'COMP-ETH UNI-V2 LP',
     tokenSymbol: 'COMP',
     icon: '🍄',
@@ -207,7 +208,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x80fb784b7ed66730e8b1dbd9820afd29931aab03',
     },
-    name: 'Aave Boar',
+    name: 'Aave',
     symbol: 'LEND-ETH UNI-V2 LP',
     tokenSymbol: 'LEND',
     icon: '🐗',
@@ -220,7 +221,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f',
     },
-    name: 'Synthetic Snake',
+    name: 'Synthetic',
     symbol: 'SNX-ETH UNI-V2 LP',
     tokenSymbol: 'SNX',
     icon: '🐍',
@@ -237,70 +238,5 @@ export const supportedPools = [
     symbol: 'YFI-ETH UNI-V2 LP',
     tokenSymbol: 'YFI',
     icon: '🐋',
-  },
-  {
-    pid: 13,
-    lpAddresses: {
-      1: '0x8bd1661da98ebdd3bd080f0be4e6d9be8ce9858c',
-    },
-    tokenAddresses: {
-      1: '0x408e41876cccdc0f92210600ef50372656052a38',
-    },
-    name: 'REN Rhino',
-    symbol: 'REN-ETH UNI-V2 LP',
-    tokenSymbol: 'REN',
-    icon: '🦏',
-  },
-  {
-    pid: 14,
-    lpAddresses: {
-      1: '0xaad22f5543fcdaa694b68f94be177b561836ae57',
-    },
-    tokenAddresses: {
-      1: '0x68A118Ef45063051Eac49c7e647CE5Ace48a68a5',
-    },
-    name: 'BASED Bull',
-    symbol: 'BASE-sUSD UNI-V2 LP',
-    tokenSymbol: 'BASED',
-    icon: '🐂',
-  },
-  {
-    pid: 15,
-    lpAddresses: {
-      1: '0xcc3d1ecef1f9fd25599dbea2755019dc09db3c54',
-    },
-    tokenAddresses: {
-      1: '0x476c5E26a75bd202a9683ffD34359C0CC15be0fF',
-    },
-    name: 'SRM Shark',
-    symbol: 'SRM-ETH UNI-V2 LP',
-    tokenSymbol: 'SRM',
-    icon: '🦈',
-  },
-  {
-    pid: 16,
-    lpAddresses: {
-      1: '0xa5904961f61bae7c4dd8478077556c91bf291cfd',
-    },
-    tokenAddresses: {
-      1: '0xaba8cac6866b83ae4eec97dd07ed254282f6ad8a',
-    },
-    name: 'eRSDLv2 eRSDL',
-    symbol: 'eRSDLv2-ETH UNI-V2 LP',
-    tokenSymbol: 'eRSDLv2',
-    icon: '🍠',
-  },
-  {
-    pid: 17,
-    lpAddresses: {
-      1: '0x3da1313ae46132a397d90d95b1424a9a7e3e0fce',
-    },
-    tokenAddresses: {
-      1: '0xD533a949740bb3306d119CC777fa900bA034cd52',
-    },
-    name: 'CRV Crocodile',
-    symbol: 'CRV-ETH UNI-V2 LP',
-    tokenSymbol: 'CRV',
-    icon: '🐊',
-  },
+  }
 ]

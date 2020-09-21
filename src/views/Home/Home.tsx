@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={chef} height={120} width={120}/>}
         title="Be the Next unFederalReserve"
-        subtitle="Stake Uniswap LP tokens or SushiSwap LP tokens to request your unFederalReserve membership!"
+        subtitle="Stake Uniswap LP tokens or UnFederalReserve LP tokens to request your unFederalReserve membership!"
       />
 
       <Container>

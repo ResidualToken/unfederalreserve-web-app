@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import chef from '../../assets/img/chef.png'
+import chef from '../../assets/img/Original.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
@@ -28,7 +28,7 @@ const Farms: React.FC = () => {
               <PageHeader
                 icon={<img src={chef} height="120" />}
                 subtitle="Earn eRSDL tokens by staking Uniswap V2 LP Tokens."
-                title="Select Your Favorite Dishes"
+                title="Merchant Banking Liquidity"
               />
               <FarmCards />
             </Route>

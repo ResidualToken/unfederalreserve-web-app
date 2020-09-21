@@ -6,23 +6,23 @@ const Nav: React.FC = () => {
     <StyledNav>
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd#code"
+        href="https://etherscan.io/address/0xae6e57597AA5C576269EF40F5058f04A24fe8De7#code"
       >
-        MasterChef Contract
+        MasterUnChairman Contract
       </StyledLink>
       <StyledLink
         target="_blank"
-        href="https://uniswap.info/pair/0xce84867c3c02b05dc570d0135103d3fb9cc19433"
+        href="https://uniswap.info/pair/0x48067fea2453f6e79fe585b7a0200ae97ad5d10a"
       >
         Uniswap eRSDL-ETH
       </StyledLink>
-      <StyledLink target="_blank" href="https://discord.gg/hJ2p555">
+      <StyledLink target="_blank" href="https://discord.gg/fN3NceM">
         Discord
       </StyledLink>
-      <StyledLink target="_blank" href="https://github.com/sushiswap">
+      <StyledLink target="_blank" href="https://github.com/ResidualToken/unfederalreserve-merchantlobby">
         Github
       </StyledLink>
-      <StyledLink target="_blank" href="https://twitter.com/sushiswap">
+      <StyledLink target="_blank" href="https://twitter.com/Unfederalreser1">
         Twitter
       </StyledLink>
     </StyledNav>
