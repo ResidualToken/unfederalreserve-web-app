@@ -4,6 +4,12 @@ import styled from 'styled-components'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
+        <StyledLink
+            target="_blank"
+            href="https://etherscan.io/address/0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6#code"
+        >
+            UnFederalReserveToken
+        </StyledLink>
       <StyledLink
         target="_blank"
         href="https://etherscan.io/address/0xF8377270af0c864d2b3BAB73BB16c65b05767549#code"
@@ -12,7 +18,7 @@ const Nav: React.FC = () => {
       </StyledLink>
       <StyledLink
         target="_blank"
-        href="https://uniswap.info/pair/0x48067fea2453f6e79fe585b7a0200ae97ad5d10a"
+        href="https://uniswap.info/pair/0x7ba9b94127d434182287de708643932ec036d365"
       >
         Uniswap eRSDL-ETH
       </StyledLink>
