@@ -40,10 +40,10 @@ export const addressMap = {
 
 export const contractAddresses = {
   sushi: {
-    1: '0x01Ce398A2A59d164f366762EE70c596de06E9482',
+    1: '0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6',
   },
   masterChef: {
-    1: '0xae6e57597AA5C576269EF40F5058f04A24fe8De7',
+    1: '0xF8377270af0c864d2b3BAB73BB16c65b05767549',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -65,7 +65,7 @@ UNI-V2 LP Address on mainnet for reference
 9  BAND 0xf421c3f2e695c2d4c0765379ccace8ade4a480d9
 10 AMPL 0xc5be99a02c6857f9eac67bbce58df5572498f40c
 11 YFI  0x2fdbadf3c4d5a8666bc06645b8358ab803996e28
-12 eRSDL 0x48067fea2453f6e79fe585b7a0200ae97ad5d10a
+12 eRSDL 0x7ba9b94127d434182287de708643932ec036d365
 
 */
 
@@ -73,10 +73,10 @@ export const supportedPools = [
   {
     pid: 12,
     lpAddresses: {
-      1: '0x48067fea2453f6e79fe585b7a0200ae97ad5d10a',
+      1: '0x7ba9b94127d434182287de708643932ec036d365',
     },
     tokenAddresses: {
-      1: '0x01Ce398A2A59d164f366762EE70c596de06E9482',
+      1: '0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6',
     },
     name: 'UnFederalReserve eRSDL!',
     symbol: 'eRSDL-ETH UNI-V2 LP',
