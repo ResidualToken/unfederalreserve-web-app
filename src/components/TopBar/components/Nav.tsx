@@ -12,7 +12,7 @@ const Nav: React.FC = () => {
         Menu
       </StyledLink>
       <StyledLink exact activeClassName="active" to="/staking">
-        Staking
+          Merchant Bank Lobby
       </StyledLink>
       <StyledAbsoluteLink
         href="https://www.unfederalreserve.com/"

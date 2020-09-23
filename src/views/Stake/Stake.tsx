@@ -52,9 +52,9 @@ const Farm: React.FC = () => {
       {!!account ? (
         <>
           <PageHeader
-            icon={<img src={chef} height="120" />}
-            title="Stake eRSDL Tokens & Earn Fees"
-            subtitle=""
+            icon={<img src={chef} height="0" />}
+            title="The Merchant Bank Lobby For Pricing and Staking"
+            subtitle="Coming soon!!!"
           />
           {/* <FarmCards /> */}
           <div>TBD</div>
