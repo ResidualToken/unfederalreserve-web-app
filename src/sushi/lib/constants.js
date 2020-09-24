@@ -82,7 +82,7 @@ export const supportedPools = [
     symbol: 'eRSDL-ETH UNI-V2 LP',
     tokenSymbol: 'eRSDL',
     icon: '🐥',
-  }/*,
+  },
   {
     pid: 0,
     lpAddresses: {
@@ -238,5 +238,5 @@ export const supportedPools = [
     symbol: 'YFI-ETH UNI-V2 LP',
     tokenSymbol: 'YFI',
     icon: '🐋',
-  }*/
+  }
 ]
