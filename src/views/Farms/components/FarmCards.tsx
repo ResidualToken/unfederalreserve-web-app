@@ -135,8 +135,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>
-              <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>Deposit s{farm.lpToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>Earn eRSDL</StyledDetail>
             </StyledDetails>
             <Spacer />
             <Button

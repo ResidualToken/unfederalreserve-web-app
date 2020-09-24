@@ -51,7 +51,7 @@ const Farm: React.FC = () => {
   }, [lpToken])
 
   const earnTokenName = useMemo(() => {
-    return earnToken.toUpperCase()
+    return "eRSDL".toUpperCase()
   }, [earnToken])
 
   return (
