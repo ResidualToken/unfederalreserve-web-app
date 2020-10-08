@@ -25,6 +25,7 @@ const StyledModalActions = styled.div`
   display: flex;
   margin: 0;
   padding: ${props => props.theme.spacing[4]}px;
+  padding-top: 5px;
 `
 
 const StyledModalAction = styled.div`

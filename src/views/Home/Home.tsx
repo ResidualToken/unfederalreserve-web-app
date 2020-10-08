@@ -1,18 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/redlogo.png'
-import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
-import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
+import Button from '../../components/Button'
+import chef from '../../assets/img/background.svg'
 
 const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={120} width={120}/>}
         title="Be the Next unFederalReserve"
         subtitle="Stake Uniswap LP tokens or UnFederalReserve LP tokens to request your unFederalReserve membership!"
       />
@@ -20,19 +18,9 @@ const Home: React.FC = () => {
       <Container>
         <Balances />
       </Container>
-      <Spacer size="lg" />
-      <StyledInfo>
-        🏆<b>Pro Tip</b>: eRSDL-ETH UNI-V2 LP token pool yields TEN TIMES more token
-        rewards per block.
-      </StyledInfo>
-      <Spacer size="lg" />
-      <div
-        style={{
-          margin: '0 auto',
-        }}
-      >
-        <Button text="🔪 See the Menu" to="/farms" variant="secondary" />
-      </div>
+      <ButtonWrap>
+        <Button text="Emit coins" to="/farms" variant="secondary" />
+      </ButtonWrap>
     </Page>
   )
 }
@@ -47,6 +35,14 @@ const StyledInfo = styled.h3`
 
   > b {
     color: ${(props) => props.theme.color.grey[600]};
+  }
+`
+const ButtonWrap = styled.div`
+  display: flex;
+  margin-top: 80px;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 `
 

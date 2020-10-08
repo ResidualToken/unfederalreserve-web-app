@@ -9,7 +9,9 @@ const Page: React.FC = ({ children }) => (
   </StyledPage>
 )
 
-const StyledPage = styled.div``
+const StyledPage = styled.div`
+position: relative;
+`
 
 const StyledMain = styled.div`
   align-items: center;

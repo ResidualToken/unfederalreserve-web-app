@@ -9,7 +9,7 @@ const StyledCardContent = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: ${(props) => props.theme.spacing[3]}px;
+  padding: 12px 23px 5px;
 `
 
 export default CardContent

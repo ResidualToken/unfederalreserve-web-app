@@ -57,7 +57,6 @@ const Farm: React.FC = () => {
   return (
     <>
       <PageHeader
-        icon={icon}
         subtitle={`Deposit ${lpTokenName}  Tokens and earn eRSDL`}
         title={name}
       />
@@ -115,9 +114,12 @@ const StyledCardWrapper = styled.div`
 `
 
 const StyledInfo = styled.h3`
-  color: ${(props) => props.theme.color.grey[400]};
-  font-size: 16px;
-  font-weight: 400;
+  color: ${(props) => props.theme.color.white};
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
   margin: 0;
   padding: 0;
   text-align: center;

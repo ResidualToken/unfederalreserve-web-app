@@ -48,13 +48,11 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
         <Button
           href={`https://etherscan.io/address/${account}`}
           text="View on Etherscan"
-          variant="secondary"
         />
         <Spacer />
         <Button
           onClick={handleSignOutClick}
           text="Sign out"
-          variant="secondary"
         />
       </ModalContent>
       <ModalActions>

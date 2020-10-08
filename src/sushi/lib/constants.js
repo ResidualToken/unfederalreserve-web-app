@@ -149,19 +149,6 @@ export const supportedPools = [
     icon: '🦑',
   },
   {
-    pid: 9,
-    lpAddresses: {
-      1: '0xf421c3f2e695c2d4c0765379ccace8ade4a480d9',
-    },
-    tokenAddresses: {
-      1: '0xba11d00c5f74255f56a5e366f4f77f5a186d7f55',
-    },
-    name: 'BAND',
-    symbol: 'BAND-ETH UNI-V2 LP',
-    tokenSymbol: 'BAND',
-    icon: '🦖',
-  },
-  {
     pid: 8,
     lpAddresses: {
       1: '0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974',
@@ -173,19 +160,6 @@ export const supportedPools = [
     symbol: 'LINK-ETH UNI-V2 LP',
     tokenSymbol: 'LINK',
     icon: '🐸',
-  },
-  {
-    pid: 10,
-    lpAddresses: {
-      1: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
-    },
-    tokenAddresses: {
-      1: '0xd46ba6d942050d489dbd938a2c909a5d5039a161',
-    },
-    name: 'Ample',
-    symbol: 'AMPL-ETH UNI-V2 LP',
-    tokenSymbol: 'AMPL',
-    icon: '🐥',
   },
   {
     pid: 4,
@@ -225,18 +199,5 @@ export const supportedPools = [
     symbol: 'SNX-ETH UNI-V2 LP',
     tokenSymbol: 'SNX',
     icon: '🐍',
-  },
-  {
-    pid: 11,
-    lpAddresses: {
-      1: '0x2fdbadf3c4d5a8666bc06645b8358ab803996e28',
-    },
-    tokenAddresses: {
-      1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
-    },
-    name: 'YFI Whale',
-    symbol: 'YFI-ETH UNI-V2 LP',
-    tokenSymbol: 'YFI',
-    icon: '🐋',
   }
 ]

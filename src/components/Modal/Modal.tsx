@@ -30,6 +30,7 @@ const StyledResponsiveWrapper = styled.div`
   position: relative;
   width: 100%;
   max-width: 512px;
+  z-index: 999
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}px) {
     flex: 1;
     position: absolute;
@@ -42,10 +43,9 @@ const StyledResponsiveWrapper = styled.div`
 `
 
 const StyledModal = styled.div`
-  padding: 0 20px;
-  background: ${(props) => props.theme.color.grey[200]};
-  border: 1px solid ${(props) => props.theme.color.grey[300]}ff;
-  border-radius: 12px;
+  padding: 35px 55px 25px;
+  background: ${(props) => props.theme.color.white};
+  border-radius: 1px;
   box-shadow: inset 1px 1px 0px ${(props) => props.theme.color.grey[100]};
   display: flex;
   flex-direction: column;

@@ -36,7 +36,6 @@ const WalletProviderModal: React.FC<ModalProps> = ({ onDismiss }) => {
               title="Metamask"
             />
           </StyledWalletCard>
-          <Spacer size="sm" />
           <StyledWalletCard>
             <WalletCard
               icon={<img src={walletConnectLogo} style={{ height: 24 }} />}
@@ -48,7 +47,7 @@ const WalletProviderModal: React.FC<ModalProps> = ({ onDismiss }) => {
       </ModalContent>
 
       <ModalActions>
-        <Button text="Cancel" variant="secondary" onClick={onDismiss} />
+        <Button text="Cancel" onClick={onDismiss} />
       </ModalActions>
     </Modal>
   )
@@ -57,14 +56,31 @@ const WalletProviderModal: React.FC<ModalProps> = ({ onDismiss }) => {
 const StyledWalletsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: ${(props) => props.theme.breakpoints.mobile}px) {
+  justify-content: space-between;
+  @media (max-width: 640px) {
     flex-direction: column;
-    flex-wrap: none;
   }
 `
 
 const StyledWalletCard = styled.div`
-  flex-basis: calc(50% - ${(props) => props.theme.spacing[2]}px);
+  flex-basis: calc(50% - 10px);
+  @media (max-width: 640px) {
+    padding-bottom: 10px;
+  }
+  > div > div {
+    padding-top: 30px;
+    padding-bottom: 12px;
+    align-items: center;
+    @media (max-width: 640px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+  button {
+    width: 135px;
+  }
 `
 
 export default WalletProviderModal

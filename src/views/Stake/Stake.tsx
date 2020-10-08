@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import chef from '../../assets/img/Original.png'
-
+import eRSDLCoin from '../../assets/img/favicon.png'
 import { useParams } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 import { provider } from 'web3-core'
@@ -52,12 +52,10 @@ const Farm: React.FC = () => {
       {!!account ? (
         <>
           <PageHeader
-            icon={<img src={chef} height="0" />}
             title="The Merchant Bank Lobby For Pricing and Staking"
             subtitle="Coming soon!!!"
           />
           {/* <FarmCards /> */}
-          <div>TBD</div>
         </>
       ) : (
         <div

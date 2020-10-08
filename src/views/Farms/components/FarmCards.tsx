@@ -17,6 +17,8 @@ import useFarms from '../../../hooks/useFarms'
 import useSushi from '../../../hooks/useSushi'
 import { getEarned, getMasterChefContract } from '../../../sushi/utils'
 import { bnToDec } from '../../../utils'
+import eRSDLCoin from '../../assets/img/favicon.png'
+
 
 interface FarmWithStakedValue extends Farm, StakedValue {
   apy: BigNumber
@@ -132,7 +134,9 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
       <Card>
         <CardContent>
           <StyledContent>
-            <CardIcon>{farm.icon}</CardIcon>
+            <StyledCardIcon>
+              <CardIcon>{farm.icon}</CardIcon>
+            </StyledCardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
               <StyledDetail>Deposit s{farm.lpToken.toUpperCase()}</StyledDetail>
@@ -143,6 +147,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}
               to={`/farms/${farm.id}`}
+              size="sm"
+              variant="white"
             >
               {!poolActive && (
                 <Countdown
@@ -254,9 +260,12 @@ const StyledCardWrapper = styled.div`
 `
 
 const StyledTitle = styled.h4`
-  color: ${(props) => props.theme.color.grey[600]};
-  font-size: 24px;
-  font-weight: 700;
+  color: ${(props) => props.theme.color.white};
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
   margin: ${(props) => props.theme.spacing[2]}px 0 0;
   padding: 0;
 `
@@ -278,23 +287,36 @@ const StyledDetails = styled.div`
 `
 
 const StyledDetail = styled.div`
-  color: ${(props) => props.theme.color.grey[500]};
+  color: ${(props) => props.theme.color.white};
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
 `
 
 const StyledInsight = styled.div`
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  border-radius: 8px;
-  background: #fffdfa;
-  color: #aa9584;
+  border-radius: 1px;
+  background: #fff;
+  color: ${(props) => props.theme.color.blue[800]};
   width: 100%;
   margin-top: 12px;
-  line-height: 32px;
-  font-size: 13px;
-  border: 1px solid #e6dcd5;
   text-align: center;
-  padding: 0 12px;
+  padding: 5px 12px;
+  > span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  }
 `
-
+const StyledCardIcon = styled.div`
+  > div {
+    width: 60px;
+    height: 60px;
+  }
+`
 export default FarmCards

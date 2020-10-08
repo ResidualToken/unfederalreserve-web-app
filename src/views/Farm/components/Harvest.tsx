@@ -32,6 +32,8 @@ const Harvest: React.FC<HarvestProps> = ({ pid }) => {
             <Button
               disabled={!earnings.toNumber() || pendingTx}
               text={pendingTx ? 'Collecting eRSDL' : 'Harvest'}
+              variant="white"
+              size="sm"
               onClick={async () => {
                 setPendingTx(true)
                 await onReward()
@@ -53,7 +55,7 @@ const StyledCardHeader = styled.div`
 const StyledCardActions = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: ${(props) => props.theme.spacing[6]}px;
+  margin-top: 20px;
   width: 100%;
 `
 

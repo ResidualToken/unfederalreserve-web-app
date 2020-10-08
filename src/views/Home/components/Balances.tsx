@@ -89,18 +89,12 @@ const Balances: React.FC = () => {
     <StyledWrapper>
       <Card>
         <CardContent>
-          <StyledBalances>
-            <StyledBalance>
-              <SushiIcon />
-              <Spacer />
-              <div style={{ flex: 1 }}>
-                <Label text="Your eRSDL Balance" />
-                <Value
-                  value={!!account ? getBalanceNumber(sushiBalance) : 'Locked'}
-                />
-              </div>
-            </StyledBalance>
-          </StyledBalances>
+          <div style={{ flex: 1 }}>
+            <Label text="Your eRSDL Balance" />
+            <Value
+              value={!!account ? getBalanceNumber(sushiBalance) : 'Locked'}
+            />
+          </div>
         </CardContent>
         <Footnote>
           Pending harvest
@@ -128,14 +122,27 @@ const Balances: React.FC = () => {
 }
 
 const Footnote = styled.div`
-  font-size: 14px;
-  padding: 8px 20px;
-  color: ${(props) => props.theme.color.grey[400]};
-  border-top: solid 1px ${(props) => props.theme.color.grey[300]};
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  color: ${(props) => props.theme.color.white};
+  opacity: 0.6;
+  padding-top: 8px;
+  padding-bottom: 13px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-top: solid 1px ${(props) => props.theme.color.white};
 `
 const FootnoteValue = styled.div`
-  font-family: 'Roboto Mono', monospace;
   float: right;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  color: ${(props) => props.theme.color.white};
 `
 
 const StyledWrapper = styled.div`

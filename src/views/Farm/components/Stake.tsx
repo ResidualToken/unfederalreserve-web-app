@@ -75,7 +75,9 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
           <StyledCardHeader>
             <CardIcon>👨🏻‍🍳</CardIcon>
             <Value value={getBalanceNumber(stakedBalance)} />
-            <Label text={`${tokenName} Tokens Staked`} />
+            <StyledLabel>
+              <Label text={`${tokenName} Tokens Staked`} />
+            </StyledLabel>
           </StyledCardHeader>
           <StyledCardActions>
             {!allowance.toNumber() ? (
@@ -83,6 +85,8 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
                 disabled={requestedApproval}
                 onClick={handleApprove}
                 text={`Approve ${tokenName}`}
+                size="sm"
+                variant="white"
               />
             ) : (
               <>
@@ -112,8 +116,8 @@ const StyledCardHeader = styled.div`
 const StyledCardActions = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: ${(props) => props.theme.spacing[6]}px;
   width: 100%;
+  margin-top: 20px;
 `
 
 const StyledActionSpacer = styled.div`
@@ -128,5 +132,9 @@ const StyledCardContentInner = styled.div`
   flex-direction: column;
   justify-content: space-between;
 `
-
+const StyledLabel = styled.div`
+  > div {
+    margin-bottom: 0px;
+  }
+`
 export default Stake

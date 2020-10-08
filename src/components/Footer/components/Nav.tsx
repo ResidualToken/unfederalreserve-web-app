@@ -38,15 +38,31 @@ const Nav: React.FC = () => {
 const StyledNav = styled.nav`
   align-items: center;
   display: flex;
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 `
 
 const StyledLink = styled.a`
-  color: ${(props) => props.theme.color.grey[400]};
-  padding-left: ${(props) => props.theme.spacing[3]}px;
-  padding-right: ${(props) => props.theme.spacing[3]}px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: ${(props) => props.theme.color.white};
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    color: ${(props) => props.theme.color.grey[500]};
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+  @media (max-width: 991px) {
+    padding-bottom: 15px;
   }
 `
 

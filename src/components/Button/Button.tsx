@@ -11,7 +11,7 @@ interface ButtonProps {
   size?: 'sm' | 'md' | 'lg',
   text?: string,
   to?: string,
-  variant?: 'default' | 'secondary' | 'tertiary'
+  variant?: 'default' | 'secondary' | 'tertiary' | 'white'
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -25,28 +25,32 @@ const Button: React.FC<ButtonProps> = ({
   variant,
 }) => {
   const { color, spacing } = useContext(ThemeContext)
-
+  let boxShadow: string
+  let buttonSize: number
+  let buttonPadding: number
+  let fontSize: number
+  let backgroundColor: string
+  let borderColor: string
   let buttonColor: string
   switch (variant) {
     case 'secondary':
       buttonColor = color.grey[500]
       break
+    case 'white':
+      buttonColor = color.white
+      backgroundColor = 'transparent'
+      borderColor = color.white
+      break
     case 'default':
     default:
-      buttonColor = color.primary.main
+      buttonColor = color.blue[800]
   }
-
-  let boxShadow: string
-  let buttonSize: number
-  let buttonPadding: number
-  let fontSize: number
   switch (size) {
     case 'sm':
-      boxShadow = `4px 4px 8px ${color.grey[300]},
-        -8px -8px 16px ${color.grey[100]}FF;`
       buttonPadding = spacing[3]
-      buttonSize = 36
-      fontSize = 14
+      buttonSize = 37
+      fontSize = 13
+      buttonPadding = 22
       break
     case 'lg':
       boxShadow = `6px 6px 12px ${color.grey[300]},
@@ -57,11 +61,11 @@ const Button: React.FC<ButtonProps> = ({
       break
     case 'md':
     default:
-      boxShadow = `6px 6px 12px ${color.grey[300]},
-        -12px -12px 24px -2px ${color.grey[100]}ff;`
-      buttonPadding = spacing[4]
+      buttonPadding = 50
       buttonSize = 56
-      fontSize = 16
+      backgroundColor = color.yellow
+      borderColor = color.yellow
+      fontSize = 17
   }
 
   const ButtonChild = useMemo(() => {
@@ -82,7 +86,9 @@ const Button: React.FC<ButtonProps> = ({
       fontSize={fontSize}
       onClick={onClick}
       padding={buttonPadding}
+      backgroundColor={backgroundColor}
       size={buttonSize}
+      borderColor={borderColor}
     >
       {children}
       {ButtonChild}
@@ -97,19 +103,22 @@ interface StyledButtonProps {
   fontSize: number,
   padding: number,
   size: number
+  backgroundColor: string,
+  borderColor: string,
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: normal;
   align-items: center;
-  background-color: ${props => props.theme.color.grey[200]};
-  border: 0;
-  border-radius: 12px;
+  border: solid 1px ${props => props.borderColor};
+  background-color: ${props => props.backgroundColor};
   box-shadow: ${props => props.boxShadow};
-  color: ${props => !props.disabled ? props.color : `${props.color}55`};
+  color: ${props => !props.disabled ? props.color : props.color};
   cursor: pointer;
   display: flex;
   font-size: ${props => props.fontSize}px;
-  font-weight: 700;
   height: ${props => props.size}px;
   justify-content: center;
   outline: none;
@@ -117,8 +126,13 @@ const StyledButton = styled.button<StyledButtonProps>`
   padding-right: ${props => props.padding}px;
   pointer-events: ${props => !props.disabled ? undefined : 'none'};
   width: 100%;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: ${props => props.theme.color.grey[100]};
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+  &:disabled {
+    opacity: 0.6;
   }
 `
 

@@ -1,13 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import chef from '../../assets/img/Original.png'
+import chef from '../../assets/img/left-logo.svg'
+import right from '../../assets/img/right-logo.svg'
 
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <img src={chef} height="222" style={{ marginTop: -4 }} />
-
+      <StyledRightLogo>
+        <img src={right} />
+      </StyledRightLogo>
+      <StyledLeftLogo>
+        <img height="100%" src={chef} />
+      </StyledLeftLogo>
     </StyledLogo>
   )
 }
@@ -17,26 +22,22 @@ const StyledLogo = styled(Link)`
   display: flex;
   justify-content: center;
   margin: 0;
-  min-height: 44px;
-  min-width: 44px;
   padding: 0;
   text-decoration: none;
+  width: 100%;
 `
-
-const StyledText = styled.span`
-  color: ${(props) => props.theme.color.grey[600]};
-  font-family: 'Montserrat SemiBold', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  margin-left: ${(props) => props.theme.spacing[2]}px;
-  @media (max-width: 400px) {
+const StyledLeftLogo = styled.div`
+  margin-left: 20px;
+  width: 100%;
+  @media (max-width: 991px) {
+    margin-left: 0px;
+  }
+  
+`
+const StyledRightLogo = styled.div`
+  @media (max-width: 991px) {
     display: none;
   }
-`
-
-const MasterChefText = styled.span`
-  font-family: 'Playfair Display', sans-serif;
 `
 
 export default Logo
