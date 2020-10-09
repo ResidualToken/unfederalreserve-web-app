@@ -81,7 +81,8 @@ export const supportedPools = [
     name: 'UnFederalReserve eRSDL!',
     symbol: 'eRSDL-ETH UNI-V2 LP',
     tokenSymbol: 'eRSDL',
-    icon: '🐥',
+    icon: '⏣',
+    comingSoonText: '',
   },
   {
     pid: 0,
@@ -94,7 +95,8 @@ export const supportedPools = [
     name: 'Tether',
     symbol: 'USDT-ETH UNI-V2 LP',
     tokenSymbol: 'USDT',
-    icon: '🐢',
+    icon: '〶',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 1,
@@ -107,7 +109,8 @@ export const supportedPools = [
     name: 'Circle',
     symbol: 'USDC-ETH UNI-V2 LP',
     tokenSymbol: 'USDC',
-    icon: '🐌',
+    icon: '〄',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 2,
@@ -120,7 +123,8 @@ export const supportedPools = [
     name: 'DAI',
     symbol: 'DAI-ETH UNI-V2 LP',
     tokenSymbol: 'DAI',
-    icon: '🦆',
+    icon: '⁍',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 3,
@@ -133,7 +137,8 @@ export const supportedPools = [
     name: 'Dollar',
     symbol: 'SUSD-ETH UNI-V2 LP',
     tokenSymbol: 'SUSD',
-    icon: '🦍',
+    icon: '☀︎',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 7,
@@ -146,7 +151,8 @@ export const supportedPools = [
     name: 'Umami',
     symbol: 'UMA-ETH UNI-V2 LP',
     tokenSymbol: 'UMA',
-    icon: '🦑',
+    icon: '⎆︎',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 8,
@@ -159,7 +165,8 @@ export const supportedPools = [
     name: 'LINK',
     symbol: 'LINK-ETH UNI-V2 LP',
     tokenSymbol: 'LINK',
-    icon: '🐸',
+    icon: '☓',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 4,
@@ -172,7 +179,8 @@ export const supportedPools = [
     name: 'Compound',
     symbol: 'COMP-ETH UNI-V2 LP',
     tokenSymbol: 'COMP',
-    icon: '🍄',
+    icon: '⌽',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 5,
@@ -185,7 +193,8 @@ export const supportedPools = [
     name: 'Aave',
     symbol: 'LEND-ETH UNI-V2 LP',
     tokenSymbol: 'LEND',
-    icon: '🐗',
+    icon: '⎉',
+    comingSoonText: 'Coming Mid October',
   },
   {
     pid: 6,
@@ -198,6 +207,7 @@ export const supportedPools = [
     name: 'Synthetic',
     symbol: 'SNX-ETH UNI-V2 LP',
     tokenSymbol: 'SNX',
-    icon: '🐍',
+    icon: '⎌',
+    comingSoonText: 'Coming Mid October',
   }
 ]
