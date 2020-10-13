@@ -84,21 +84,25 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
               <Button
                 disabled={requestedApproval}
                 onClick={handleApprove}
-                text={`Approve ${tokenName}`}
                 size="sm"
                 variant="white"
+                text={`Approve ${tokenName}`}
               />
             ) : (
               <>
                 <Button
                   disabled={stakedBalance.eq(new BigNumber(0))}
                   text="Unstake"
+                  size="sm"
+                  variant="white"
                   onClick={onPresentWithdraw}
                 />
-                <StyledActionSpacer />
-                <IconButton onClick={onPresentDeposit}>
-                  <AddIcon />
-                </IconButton>
+                <Button
+                  text="Stake"
+                  size="sm"
+                  variant="white"
+                  onClick={onPresentDeposit}
+                />
               </>
             )}
           </StyledCardActions>
@@ -118,6 +122,11 @@ const StyledCardActions = styled.div`
   justify-content: center;
   width: 100%;
   margin-top: 20px;
+  button {
+    :nth-child(2) {
+      margin-left: 10px;
+    }
+  }
 `
 
 const StyledActionSpacer = styled.div`

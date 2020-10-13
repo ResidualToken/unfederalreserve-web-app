@@ -7,12 +7,12 @@ import right from '../../assets/img/right-logo.svg'
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
-      <StyledRightLogo>
-        <img src={right} />
-      </StyledRightLogo>
       <StyledLeftLogo>
         <img height="100%" src={chef} />
       </StyledLeftLogo>
+      <StyledRightLogo>
+        <img src={right} />
+      </StyledRightLogo>
     </StyledLogo>
   )
 }
@@ -27,12 +27,12 @@ const StyledLogo = styled(Link)`
   width: 100%;
 `
 const StyledLeftLogo = styled.div`
-  margin-left: 20px;
-  width: 100%;
+  margin-right: 20px;
+  width: 44px;
+  height: 44px;
   @media (max-width: 991px) {
-    margin-left: 0px;
+    margin-right: 0px;
   }
-  
 `
 const StyledRightLogo = styled.div`
   @media (max-width: 991px) {

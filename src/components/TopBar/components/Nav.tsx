@@ -40,7 +40,7 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled(NavLink)`
   color: ${(props) => props.theme.color.white};
-  opacity: 0.2;
+  opacity: 0.5;
   font-weight: 700;
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
@@ -74,7 +74,7 @@ const StyledLink = styled(NavLink)`
 
 const StyledAbsoluteLink = styled.a`
   color: ${(props) => props.theme.color.white};
-  opacity: 0.2;
+  opacity: 0.5;
   font-weight: 700;
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;

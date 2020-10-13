@@ -142,7 +142,6 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>
               <StyledDetail>Earn eRSDL</StyledDetail>
             </StyledDetails>
-            <Spacer />
             <Button
               disabled={!poolActive}
               text={poolActive ? 'Select' : undefined}
@@ -274,6 +273,7 @@ const StyledContent = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 23px 12px 20px 12px;
 `
 
 const StyledSpacer = styled.div`
@@ -284,6 +284,7 @@ const StyledSpacer = styled.div`
 const StyledDetails = styled.div`
   margin-top: ${(props) => props.theme.spacing[2]}px;
   text-align: center;
+  margin-bottom: 25px;
 `
 
 const StyledDetail = styled.div`

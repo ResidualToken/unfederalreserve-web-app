@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
   margin: 0;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000;
+  background: rgba(22,18,34,1);
   position: relative;
 }
 
@@ -18,17 +21,19 @@ body::before {
   background-image: url('assets/img/part1.svg');
   background-size: 100%;
   z-index: -1;
+  
 }
+
 body::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -10px;
   width: 100%;
-  height: 480px;
+  height: 500px;
   background-repeat: no-repeat;
   background-image: url('assets/img/part2.svg');
-  background-size: 100%;
+  background-size: cover;
   z-index: -1;
   background-position: 0 100px;
 }
@@ -39,6 +44,7 @@ body::after {
   }
   body::after {
     background-size: cover;
+    background-position: 0 0px;
   }
 }
 

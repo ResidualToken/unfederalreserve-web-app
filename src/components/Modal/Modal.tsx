@@ -2,14 +2,18 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 export interface ModalProps {
-  onDismiss?: () => void
+  onDismiss?: () => void,
 }
 
-const Modal: React.FC = ({ children }) => {
+const Modal: React.FC = ({
+  children
+}) => {
   return (
-    <StyledResponsiveWrapper>
-      <StyledModal>{children}</StyledModal>
-    </StyledResponsiveWrapper>
+      <StyledResponsiveWrapper>
+        <StyledModal>
+          {children}
+        </StyledModal>
+      </StyledResponsiveWrapper>
   )
 }
 
@@ -30,7 +34,7 @@ const StyledResponsiveWrapper = styled.div`
   position: relative;
   width: 100%;
   max-width: 512px;
-  z-index: 999
+  z-index: 999;
   @media (max-width: ${(props) => props.theme.breakpoints.mobile}px) {
     flex: 1;
     position: absolute;
